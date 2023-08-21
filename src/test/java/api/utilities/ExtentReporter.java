@@ -24,7 +24,7 @@ public class ExtentReporter implements ITestListener
 	public void onStart(ITestContext context)
 	{
 		String timeStamp = new SimpleDateFormat("yyy.MM.dd.HH.mm.ss").format(new Date());
-		repName = "RestAssured-Test-Report-"+timeStamp+".html";
+		repName = "RestAssured-Test-Report.html";
 		
 		sparkReporter = new ExtentSparkReporter(".\\Reports\\"+repName);
 		sparkReporter.config().setDocumentTitle("New Design Frame Work");
